@@ -19,7 +19,7 @@ body {
 } 
 
 /* LINK STYLING*/
-.topnav a, .gridcontainer a {
+.topnav a, .menu a {
     float: left;
     color: #c8cbc0;
     text-align: center;
@@ -28,7 +28,7 @@ body {
     font-size: 18px;
 }
 
-.topnav a:hover , .gridcontainer a:hover{
+.topnav a:hover , .menu a:hover{
     color: #65806D;
 }
 
@@ -36,7 +36,7 @@ body {
     color: #BD7423;
 }
 
-.gridcontainer a {
+.menu a {
     float: none;
     padding: 5px;
     display: block;
