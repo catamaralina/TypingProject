@@ -3,10 +3,10 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-image: url('flowers.png');
+    background-image: url('flowerful.png');
     background-repeat: no repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 /* TOP NAV */
@@ -18,8 +18,8 @@ body {
     padding: 5px;
 } 
 
-/* TOP NAV LINK STYLING*/
-.topnav a {
+/* LINK STYLING*/
+.topnav a, .gridcontainer a {
     float: left;
     color: #c8cbc0;
     text-align: center;
@@ -28,13 +28,20 @@ body {
     font-size: 18px;
 }
 
-.topnav a:hover {
+.topnav a:hover , .gridcontainer a:hover{
     color: #65806D;
 }
 
 .topnav a.active {
     color: #BD7423;
 }
+
+.gridcontainer a {
+    float: none;
+    padding: 5px;
+    display: block;
+}
+
 /* END */
 
 /* TYPING CONTAINER */
@@ -101,5 +108,34 @@ footer {
     padding: 5px;
     text-align: center;
     bottom: 0px;
+    margin-top: 15px;
     position: fixed;
+}
+
+/* SPLIT VIEW*/
+.gridcontainer {
+    /*border: solid black 2px; */
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    align-items: start;
+}
+
+.gridobject {
+    width: 90%;
+}
+
+div.menu {
+    background-color: none;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 5px;
+    height: auto;
+    display: block;
+}
+
+.display {
+    font-size: 16px;
+    padding: 5px;
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="icon" type="image/x-icon" href="images/TheNounProject.png"> <!--Retrieved from:   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+    <title> Catamaralina's Typing Project </title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Typing</a>
+        <a class="active" href="copy.html">Copy Text</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="gridcontainer">
+        <div class="gridobject container">
+            <div class="menu">
+                <h1>Choose Your Text</h1>
+                <a href="#" class="file-link" data-file="ACalltoReturntotheLord.txt">A Call to Return to the Lord</a>
+                <a href="#" class="file-link" data-file="DavidsSongofPraise.txt">Davids Song of Praise</a>
+                <a href="#" class="file-link" data-file="FaithandEndurance.txt">Faith and Endurance</a>
+            </div>
+
+            <div class="display" id="content-container"></div>
+            <button id="clear-button">Clear</button>
+        </div>
+
+        <div class="gridobject container">
+            <h1>Type Your Text</h1>
+            <textarea id="userInput" placeholder="Type something..."></textarea>
+        
+            <div id="displayText"></div>
+            <button onclick="clearStoredText()">Clear Text</button>
+        </div>
+    </div>
+    
+    <script src="js.js"></script>
+    
+
+
+</body>
+
+<footer>
+    <p>The End.</p>
+</footer>
