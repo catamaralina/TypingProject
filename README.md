@@ -4,7 +4,7 @@ https://catamaralina.github.io/TypingProject/index.html
 # About
 Using js, this website was built for the purpose of typing out memorization, and to practice memorization ability. 
 
-# Current Abilityies
+# Current Abilities
 1. A place to type and locally store user-input text.
 2. Has the ability to clear text and selected txt file.
 3. Ability to select a pre-uploaded txt file to be selected and loaded for the user to view.
