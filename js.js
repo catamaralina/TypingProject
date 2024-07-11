@@ -80,8 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
       fetch(file)
         .then(response => response.text())
         .then(data => {
-          // Display the content in the content container
-          contentContainer.textContent = data;
+          // Split the text into paragraphs assuming each new line starts a new paragraph
+          var paragraphs = data.split('\n'); // Adjust this if your file uses a different delimiter
+
+          // Clear existing content
+          contentContainer.innerHTML = '';
+
+          // Create paragraphs and append to content container
+          paragraphs.forEach(function(paragraphText) {
+            var p = document.createElement('p');
+            p.textContent = paragraphText.trim(); // Trim any leading/trailing whitespace
+            contentContainer.appendChild(p);
+          });
         })
         .catch(error => {
           // Handle errors

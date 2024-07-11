@@ -3,10 +3,11 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    background-image: url('flowerful.png');
+    background-image: url('images/flowerful.png');
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 /* TOP NAV */
@@ -25,7 +26,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .topnav a:hover , .menu a:hover{
@@ -40,6 +41,7 @@ body {
     float: none;
     padding: 5px;
     display: block;
+    font-size: 1.5em;
 }
 
 /* END */
@@ -66,15 +68,21 @@ h1 {
     color: #c8cbc0;
 }
 
+p {
+    font-size: 1.25em;
+    font-weight: light;
+}
+
 textarea {
     width: 95%;
-    min-height: 50px; /* Adjust as needed */
+    min-height: 100px; /* Adjust as needed */
     padding: 5px;
-    font-size: 16px;
+    font-size: 1.5em;
     border: 1px solid #c8cbc0;
     border-radius: 5px;
     resize: vertical; /* Allow vertical resizing only */
     margin-bottom: 20px;
+    height: auto;
 }
 
 #displayText {
@@ -82,6 +90,9 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    height: 800px;
+    font-size: 1.15em;
+
 }
 
 button {
@@ -101,15 +112,15 @@ button:hover {
 }
 
 footer {
-    width: 100%;
     background-color:#072F38;
-    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-    padding: 5px;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#FFFFFF;
     text-align: center;
-    bottom: 0px;
-    margin-top: 15px;
-    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
 }
 
 /* SPLIT VIEW*/
@@ -136,6 +147,6 @@ div.menu {
 }
 
 .display {
-    font-size: 16px;
-    padding: 5px;
+    font-size: 1.25em;
+    padding: 10px;
 }
